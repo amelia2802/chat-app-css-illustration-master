@@ -28,6 +28,7 @@ body{
     padding: 0;
     background-color: var(--light-grayish-violet);
     font-family: "Rubik", sans-serif;
+    overflow-x: hidden;
 }
 
 main{
@@ -50,8 +51,8 @@ main{
 }
 
 .right{
-    right: -5rem;
-    top: 3rem;
+    right: -13rem;
+    top: 10rem;
     background-color: var(--grayish-blue);
     border-radius: 500px 500px 0 0;
     opacity: .1;
@@ -59,19 +60,20 @@ main{
 
 .application{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
 .device-design{
     position: relative;
     top: 9rem;
-    left: 27%;
+    left: 26%;
     width: 15rem;
     height: 31.5rem;
     background-color: var(--white);
     padding: .6rem;
     border-radius: 35px;
+    box-shadow: 10px 10px 15px var(--grayish-blue);
 }
 
 .camera{
@@ -97,7 +99,13 @@ main{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content: space-around;
+}
+
+.fa-less-than,.fa-ellipsis-vertical{
+    width: 8px;
+    position: relative;
+    top: .5rem;
 }
 
 .profile-info > img{
@@ -105,11 +113,15 @@ main{
     height: 1.4rem;
     border-radius: 50%;
     border:1px solid var(--white);
+    position: relative;
+    top: .5rem;
+    right: 1pc;
 }
 .about{
     position: relative;
-    font-size: 10px;
+    font-size: 8px;
     color: var(--white);
+    right: 2.5pc;
 }
 .about>h2{
     margin-top: 2rem;
@@ -161,9 +173,15 @@ main{
     max-width: 10rem;
     border-radius: 10px 10px 10px 2px;
     padding:.5rem 1rem;
-    accent-color: var(--very-light-magenta);
     color: var(--white);
+    accent-color: var(--very-light-magenta);
     background:linear-gradient(to right, var(--light-magenta),var(--light-violet)) ;
+
+}
+
+input[type=radio]d{
+    border: 1px solid var(--very-light-magenta);
+    background-color: var(--light-magenta);
 }
 
 .images{
@@ -180,12 +198,50 @@ main{
 }
 
 .text{
-    width: max-content;
+    width: 80%;
     padding:.5rem;
     margin:1.6rem 1rem .5rem;
     border-radius: 25px;
     border: none;
     color: var(--grayish-blue);
 }
-.attribution { font-size: 11px; text-align: center; }
+
+.submit{
+    font-size: 1.2rem;
+    position: absolute;
+    top: 23.5rem;
+    right: 1.3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    color: var(--white);
+    border-radius: 50%;
+    background-color: var(--very-dark-desaturated-violet);
+}
+
+.product-info{
+    position: sticky;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    left: 15rem;
+    height: auto;
+    top: 30%;
+}
+
+.title{
+    font-size: 2.3rem;
+    color: var(--very-dark-desaturated-violet);
+}
+
+.desc{
+    margin:0 15rem 0 0;
+    line-height: 30px;
+    color: var(--dark-grayish-violet);
+}
+.attribution {
+    position: absolute;
+    bottom: 100vh;
+    font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
