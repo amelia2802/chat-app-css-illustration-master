@@ -252,3 +252,100 @@ input[type=radio]d{
     bottom: 100vh;
     font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 450px) {    
+    .left{
+        left: -20rem;
+        top: -17rem;
+    }
+    
+    .right{
+        display: none;
+    }
+    
+    .application{
+        display: flex;
+        flex-direction:column ;
+        justify-content: flex-start;
+        align-items: self-start;
+    }
+    
+    .device-design{
+        top: 5rem;
+        left: 12%;
+        width: 12rem;
+        height: 26.5rem;
+    }
+    
+    .camera{
+        height: 1rem;
+    }
+    
+    .header{
+        height: 3.5rem;
+    }
+    
+    .fa-less-than,.fa-ellipsis-vertical{
+        width: 5px;
+    }
+    
+    .profile-info > img{
+        width: 1rem;
+        height: 1rem;
+        top: .2rem;
+    }
+    .about{
+        position: relative;
+        font-size: 8px;
+        color: var(--white);
+        right: 1.5pc;
+    }
+    .about>h2{
+        margin-top: 1.5rem;
+        font-size: 8px;
+    }
+    
+    .chat{
+        width: 6rem;
+        padding:.2rem;
+    }
+    
+    span{
+        font-size: .5rem;
+        right: .4rem;
+    }
+    
+    .dog-pic{
+        width: 2.6rem;
+    }
+    
+    .submit{
+        font-size: 1rem;
+        top: 19.5rem;
+    }
+    
+    .product-info{
+        position:relative;
+        float: left;
+        display: block;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        top: 7%;
+        margin: 1rem;
+    }
+    
+    .title{
+        font-size: 1.5rem;
+    }
+    
+    .desc{
+        margin:0;
+        font-size: .8rem;
+    }
+    .attribution {
+        position: absolute;
+        bottom: 100vh;
+        font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+}
