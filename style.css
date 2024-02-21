@@ -169,6 +169,13 @@ main{
     top: .4rem;
 }
 
+span{
+    font-weight: bold;
+    font-size: .7rem;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+}
 .opt{
     max-width: 10rem;
     border-radius: 10px 10px 10px 2px;
